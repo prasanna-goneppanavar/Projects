@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Home Page</title>
+<style type="text/css">
+.popover {
+    z-index: 999 !important;
+}
+input::-ms-clear {
+    display: none;
+}
+fieldset.scheduler-border {
+	border: 1px solid #ddd !important;
+	padding: 0 0 1.4em 1.4em  !important;
+	/* margin: 0 0 1.5em 0 !important; */
+	-webkit-box-shadow: 0px 0px 0px 0px #000;
+	box-shadow: 0px 0px 0px 0px #000;
+	
+	/* margin: 5px;
+    padding: 0px 20px 20px 20px;
+    border: solid orange;
+    border-width: 1px 1px 1px 1px;
+    overflow: hidden; */
+}
+legend.scheduler-border {
+	font-size: 12px !important;
+	font-weight: bold !important;
+	text-align: left !important;
+	width: auto;
+	padding: 0 10px;
+	border-bottom: none;
+}
+.margin-top-05{
+	padding-bottom: 3px;
+	padding-top: 3px;
+}
+ul>li>a
+{
+	color: white;
+	font-weight: bold;
+}
+</style>
+ <script>
+  $(function(){
+	  $('#myCarousel').carousel({
+		    interval: 2000,
+		    cycle: true
+		});
+    });
+   </script> 
+</head>
+<body>
+	<div class="container-fluid" ng-controller="sampleFormController">
+		<div class="row">		
+			<div  class="col-lg-12">
+				<form name="homePageForm" id="homePageForm">
+					<div class="row">
+					  <div class="col-md-8">
+					  		<img img-src="/awplLogo.jpg" alt="awplLogo" id="logo" >
+					  </div>
+					  <div class="col-md-4">
+					  	<span class="Pull-right">
+					  		<button class="btn btn-warning btn-md ">
+					    		<span class="glyphicon glyphicon-earphone"><b>Toll Free 1800 26 </b></span>
+					    	</button>
+					    	 <span class="clearfix" style="cursor: pointer; font-size: 12px; font-family: sans-serif;">
+					    	 	<span><a>About Us</a> | <a>Awards</a> | <a>Alumni</a> | <a>Contact Us </a> | <a>Careers</a> | <a>Agents</a> | <a>Corporate Login</a></span>
+					    	 </span>
+					    </span>
+					  </div>
+					</div>
+					<nav role="navigation" class="navbar navbar-dark bg-primary">
+				        <!-- Collection of nav links, forms, and other content for toggling -->
+				        <div id="navbarCollapse" class="collapse navbar-collapse navbar-primary">
+				            <ul class="nav navbar-nav">
+				                <li class="dropdown">
+				                 <a data-toggle="dropdown" class="dropdown-toggle" href="#">Motor Insurance<b class="caret"></b></a>
+				                  <ul role="menu" class="dropdown-menu">
+				                        <li><a href="#">Car Insurance</a>
+				                        </li>
+				                        <li><a href="#">Two wheeler Insurance</a></li>
+				                        <li><a href="#">Cat Guide</a></li>
+				                    </ul>
+				                </li>
+				                <li class="dropdown">
+				                 <a data-toggle="dropdown" class="dropdown-toggle" href="#">Travel Insurance<b class="caret"></b></a>
+				                  <ul role="menu" class="dropdown-menu">
+				                        <li><a href="#">International Travel</a></li>
+				                        <li><a href="#">Senior citizen</a></li>
+				                        <li><a href="#">Gold Multi Trip</a></li>
+				                    </ul>
+				                </li>
+				                 <li class="dropdown">
+				                 <a data-toggle="dropdown" class="dropdown-toggle" href="#">Home Insurance<b class="caret"></b></a>
+				                  <ul role="menu" class="dropdown-menu">
+				                        <li><a href="#">Home Insurance</a></li>
+				                    </ul>
+				                </li>
+				                 <li class="dropdown">
+				                 <a data-toggle="dropdown" class="dropdown-toggle" href="#">Claims & Wellness<b class="caret"></b></a>
+				                  <ul role="menu" class="dropdown-menu">
+				                        <li><a href="#">Health Claim and illness</a></li>
+				                        <li><a href="#">Health Advisor</a></li>
+				                        <li><a href="#">Motor Claims</a></li>
+				                        <li><a href="#">Travel Claims</a></li>
+				                        <li><a href="#">Home Claims</a></li>
+				                        <li><a href="#">Marine Claim Tracker</a></li>
+				                        <li><a href="#">Property Claim Tracker</a></li>
+				                        <li><a href="#">Surveyors Limit</a></li>
+				                    </ul>
+				                </li>
+				                <li><a href="#">Customer Support</a></li>
+				            </ul>
+				            <ul class="nav navbar-nav navbar-right">
+				                <li><a href="#">Login <span class="glyphicon glyphicon-lock"></span></a></li>
+				            </ul>
+				        </div>
+				    </nav>
+				    <div class="container-fluid">
+				    	<div class="row margin-top-05">
+				    		<div class="col-lg-6">
+						    	<div class="panel panel-primary" style="margin-bottom: 0;margin-top: 0;">
+									<div class="panel-heading">
+										<h6 class="panel-title"><b>Get a Quick Quote for Car </b></h6>
+									</div>
+									<div class="panel-body" style="font-size: 12px;">
+										<div class="row margin-top-05">
+											<div class="col-lg-6">
+												<label class="control-label"> City where the vehicle was registered (RTO)</label>
+											</div>
+											<div class="col-lg-6">
+												<input name="holder.reasonToOpenAccount"
+												class="input-sm form-control"
+												placeholder="Reason to open account"
+												ng-model="corpdm.NonIndividualParties[0].reasonToOpenAccount" type="text"
+												ah-validate="([^\s])" ah-validate-flags="i"
+												validation-message="Reason to open account is Required." />
+											</div>
+										</div>
+										<div class="row margin-top-05">
+											<div class="col-lg-6">
+												<label class="control-label">Data of Registration</label>
+											</div>
+											<div class="col-lg-6">
+												<input name="holder.reasonToOpenAccount"
+												class="input-sm form-control"
+												placeholder="Reason to open account"
+												ng-model="corpdm.NonIndividualParties[0].reasonToOpenAccount" type="text"
+												ah-validate="([^\s])" ah-validate-flags="i"
+												validation-message="Reason to open account is Required." />
+											</div>
+										</div>
+										<div class="row margin-top-05">
+											<div class="col-lg-6">
+												<label class="control-label">Manufacturer</label>
+											</div>
+											<div class="col-lg-6">
+												<select class="input-sm form-control" ng-model="corpdm.BankStatementFrequency" ah-validate="([^\s])"
+													ah-validate-flags="i" validation-message="Frequency is Required.">
+													<option value="">-select-</option>
+													<option value="Bajaj">Bajaj</option>
+													<option value="Hero">Hero</option>
+													<option value="Honda">Honda</option>
+													<option value="TVS">TVS</option>
+												</select>
+											</div>
+										</div>
+										<div class="row margin-top-05">
+											<div class="col-lg-6">
+												<label class="control-label">Model</label>
+											</div>
+											<div class="col-lg-6">
+												<select class="input-sm form-control" ng-model="corpdm.BankStatementFrequency" ah-validate="([^\s])"
+													ah-validate-flags="i" validation-message="Frequency is Required.">
+													<option value="">-select-</option>
+													<option value="Daily">CB Shine</option>
+													<option value="Weekly">Dream Yuga</option>
+													<option value="Monthly">Sports</option>
+													<option value="Quarterly">Pulser</option>
+													<option value="HalfYearly">Half-Yearly</option>
+													<option value="WhenFull">When Full</option>
+												</select>
+											</div>
+										</div>
+										<div class="row margin-top-05">
+											<div class="col-lg-6">
+												<label class="control-label">Mobile Number</label>
+											</div>
+											<div class="col-lg-6">
+												<input name="holder.reasonToOpenAccount"
+												class="input-md form-control"
+												placeholder="Reason to open account"
+												ng-model="corpdm.NonIndividualParties[0].reasonToOpenAccount" type="text"
+												ah-validate="([^\s])" ah-validate-flags="i"
+												validation-message="Reason to open account is Required." />
+											</div>
+										</div>
+										<div class="row margin-top-05">
+											<div class="col-lg-6">
+												<label class="control-label">Email ID</label>
+											</div>
+											<div class="col-lg-6">
+												<input name="holder.reasonToOpenAccount"
+												class="input-sm form-control"
+												placeholder="Reason to open account"
+												ng-model="corpdm.NonIndividualParties[0].reasonToOpenAccount" type="text"
+												ah-validate="([^\s])" ah-validate-flags="i"
+												validation-message="Reason to open account is Required." />
+											</div>
+										</div>
+										<div class="row margin-top-05">
+											<div class="col-lg-6">
+												<label class="control-label"> I agree to the Terms and Conditions</label>
+											</div>
+											<div class="col-lg-6">
+												<input type="checkbox" name="corpdm.internetBanking"
+													ng-model="corpdm.internetBanking" ng-true-value="'Yes'"
+													ng-false-value="'No'"
+													ng-disabled="corpdm.NonIndividualParties[0].entityType!='Sole Proprietor' || formDisable">
+												</label>
+											</div>
+										</div>
+										<div class="row margin-top-05">
+											<div class="col-lg-6">
+											</div>
+											<div class="col-lg-6">
+												<button type="button" class="btn btn-xs btn-success" title="Add Document" >
+													<span class="glyphicon glyphicon-ok" style="cursor: pointer; font-weight: bold;">Quote</span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div id="myCarousel" class="carousel slide">
+								    <!-- Indicators -->
+								    <ol class="carousel-indicators">
+								        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+								        <li data-target="#myCarousel" data-slide-to="1"></li>
+								        <li data-target="#myCarousel" data-slide-to="2"></li>
+								    </ol>
+								    <div class="carousel-inner">
+								        <div class="item active">
+								            <img img-src="/HomePageBanner1.jpg" alt="HomePageBanner1" id="logo" >
+								            <div class="container">
+								            </div>
+								        </div>
+								        <div class="item">
+								            <img img-src="/HomePageBanner2.jpg" alt="HomePageBanner2" id="logo" >
+								            <div class="container">
+								            </div>
+								        </div>
+								        <div class="item">
+								            <img img-src="/HomePageBanner3.jpg" alt="HomePageBanner3" id="logo" >
+								            <div class="container">
+								            </div>
+								        </div>
+								    </div>
+								    <!-- Controls --> <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+								    <span class="icon-prev"></span>
+								  </a>
+								 <a class="right carousel-control" href="#myCarousel" data-slide="next">
+								    <span class="icon-next"></span>
+								  </a> 
+								</div>
+								<!-- /.carousel -->
+								<br />
+								<br />
+								<br />
+								<br />
+								<br />
+							</div>
+						</div>
+						<div class="container-fluid">
+							<div class="row margin-top-05">
+								<div class="col-lg-3" style="border: 1px solid;">
+									 <img img-src="/car-insurance.jpg" alt="car-insurance" id="logo" >
+									  <div><br />
+									 	<b>Car Insurance</b><br />
+									 		<p></p>
+									 </div>
+								</div>
+								<div class="col-lg-3" style="border: 1px solid;">
+									 <img img-src="/two-wheeler-insurance.jpg" alt="two-wheeler-insurance" id="logo" >
+									  <div><br />
+									 	<b>Two wheeler Insurance</b>
+									 	<span class="clearfix"></span>
+									 		<p></p>
+									 </div>
+								</div>
+								<div class="col-lg-3" style="border: 1px solid;">
+									 <img img-src="/home-insurance.jpg" alt="home-insurance" id="logo" >
+									   <div><br />
+									 	<b>Home Insurance</b><br />
+									 		<p></p>
+									 </div>
+								</div>
+								<div class="col-lg-3" style="border: 1px solid;">
+								 	 <div style="height: 150px">
+									 </div>
+								</div>
+							</dsiv>
+						</div>
+					</div>
+					<div class="panel-footer">
+						<div class="text-center">
+							.....<b>Footer is pending</b>...
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

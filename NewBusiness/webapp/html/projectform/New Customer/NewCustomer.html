@@ -1,0 +1,173 @@
+<html>
+	<head>
+		<title>New Customer</title>
+	</head>
+	<body>
+		<div class='container' ng-controller='newcustomerController'>
+			<div class='row'>
+				<div class='col-lg-12'>
+					<form name='newcustomer' id='newcustomer'>
+						<div id='main-panel' class="panel panel-primary">
+							<div class="panel-heading">
+								<h3 class="panel-title"><b>Customer Data Model</b></h3>
+							</div>
+							<div class="panel-body">
+								<div class="container-fluid">
+										<div class="row margin-top-05">
+											<div class="col-lg-3">
+												<label class="control-label">Existing Customer</label>
+											</div>
+											<div class="col-lg-3">
+												<input name="dm.excust" placeholder="Existing Customer"  class="input-md form-control" ng-model="dm.excust" type="string"  validation-message="This is Required."/>
+											</div>
+											<div class="col-lg-3">
+												<label class="control-label">Saluation</label>
+											</div>
+											<div class="col-lg-3">
+												<input name="dm.sal" placeholder="Saluation"  class="input-md form-control" ng-model="dm.sal" type="string"  validation-message="This is Required."/>
+											</div>
+						</div>
+										<div class="row margin-top-05">
+											<div class="col-lg-3">
+												<label class="control-label">First Name</label>
+											</div>
+											<div class="col-lg-3">
+												<input name="dm.fname" placeholder="First Name"  class="input-md form-control" ng-model="dm.fname" type="string"  validation-message="This is Required."/>
+											</div>
+											<div class="col-lg-3">
+												<label class="control-label">Middle Name</label>
+											</div>
+											<div class="col-lg-3">
+												<input name="dm.mname" placeholder="Middle Name"  class="input-md form-control" ng-model="dm.mname" type="string"  validation-message="This is Required."/>
+											</div>
+						</div>
+										<div class="row margin-top-05">
+											<div class="col-lg-3">
+												<label class="control-label">Last Name</label>
+											</div>
+											<div class="col-lg-3">
+												<input name="dm.lname" placeholder="Last Name"  class="input-md form-control" ng-model="dm.lname" type="string"  validation-message="This is Required."/>
+											</div>
+											<div class="col-lg-3">
+												<label class="control-label">Date of birth</label>
+											</div>
+											<div class="col-lg-3">
+												<div class="inner-addon right-addon">
+													<span class="glyphicon glyphicon-calendar icon-cal" aria-hidden="true"></span>
+													<input name="dm.dob.timeinmillis" date-as-timestamp datepicker-popup="dd-MM-yyyy" placeholder="Date of birth"  class="input-md form-control" is-open="pickdate.dob" ng-click="pickdate.dob=true" ng-model="dm.dob.timeinmillis" type='text' ng-readonly='true'  />
+												</div>
+											</div>
+						</div>
+										<div class="row margin-top-05">
+											<div class="col-lg-3">
+												<label class="control-label">Place of Birth</label>
+											</div>
+											<div class="col-lg-3">
+												<input name="dm.pob" placeholder="Place of Birth"  class="input-md form-control" ng-model="dm.pob" type="string"  validation-message="This is Required."/>
+											</div>
+											<div class="col-lg-3">
+												<label class="control-label">Gender</label>
+											</div>
+											<div class="col-lg-3">
+												<input name="dm.gender" placeholder="Gender"  class="input-md form-control" ng-model="dm.gender" type="string"  validation-message="This is Required."/>
+											</div>
+						</div>
+										<div class="row margin-top-05">
+											<div class="col-lg-3">
+												<label class="control-label">Marrital status</label>
+											</div>
+											<div class="col-lg-3">
+												<input name="dm.mar" placeholder="Marrital status"  class="input-md form-control" ng-model="dm.mar" type="string"  validation-message="This is Required."/>
+											</div>
+											<div class="col-lg-3">
+												<label class="control-label">Father Name</label>
+											</div>
+											<div class="col-lg-3">
+												<input name="dm.fdname" placeholder="Father Name"  class="input-md form-control" ng-model="dm.fdname" type="string"  validation-message="This is Required."/>
+											</div>
+						</div>
+										<div class="row margin-top-05">
+											<div class="col-lg-3">
+												<label class="control-label">Mother Name</label>
+											</div>
+											<div class="col-lg-3">
+												<input name="dm.mdname" placeholder="Mother Name"  class="input-md form-control" ng-model="dm.mdname" type="string"  validation-message="This is Required."/>
+											</div>
+											<div class="col-lg-3">
+												<label class="control-label">Language</label>
+											</div>
+											<div class="col-lg-3">
+												<input name="dm.lang" placeholder="Language"  class="input-md form-control" ng-model="dm.lang" type="string"  validation-message="This is Required."/>
+											</div>
+						</div>
+										<div class="row margin-top-05">
+											<div class="col-lg-3">
+												<label class="control-label">No of Dependence</label>
+											</div>
+											<div class="col-lg-3">
+												<input name="dm.nod" placeholder="No of Dependence"  class="input-md form-control" ng-model="dm.nod" type="string"  validation-message="This is Required."/>
+											</div>
+											<div class="col-lg-3">
+												<label class="control-label">Unique Id</label>
+											</div>
+											<div class="col-lg-3">
+												<input name="dm.uid" placeholder="Unique Id"  class="input-md form-control" ng-model="dm.uid" type="string"  validation-message="This is Required."/>
+											</div>
+						</div>
+										<div class="row margin-top-05">
+											<div class="col-lg-3">
+												<label class="control-label">Primary Email</label>
+											</div>
+											<div class="col-lg-3">
+												<input name="dm.email" placeholder="Primary Email"  class="input-md form-control" ng-model="dm.email" type="string"  validation-message="This is Required."/>
+											</div>
+											<div class="col-lg-3">
+												<label class="control-label">Mobile No</label>
+											</div>
+											<div class="col-lg-3">
+												<input name="dm.mob" placeholder="Mobile No"  class="input-md form-control" ng-model="dm.mob" type="string"  validation-message="This is Required."/>
+											</div>
+						</div>
+										<div class="row margin-top-05">
+											<div class="col-lg-3">
+												<label class="control-label">Home Phone</label>
+											</div>
+											<div class="col-lg-3">
+												<input name="dm.hp" placeholder="Home Phone"  class="input-md form-control" ng-model="dm.hp" type="string"  validation-message="This is Required."/>
+											</div>
+											<div class="col-lg-3">
+												<label class="control-label">Work Phone</label>
+											</div>
+											<div class="col-lg-3">
+												<input name="dm.wp" placeholder="Work Phone"  class="input-md form-control" ng-model="dm.wp" type="string"  validation-message="This is Required."/>
+											</div>
+						</div>
+										<div class="row margin-top-05">
+											<div class="col-lg-3">
+												<label class="control-label">Home</label>
+											</div>
+											<div class="col-lg-3">
+												<input name="dm.home" placeholder="Home"  class="input-md form-control" ng-model="dm.home" type="string"  validation-message="This is Required."/>
+											</div>
+											<div class="col-lg-3">
+												<label class="control-label">Office</label>
+											</div>
+											<div class="col-lg-3">
+												<input name="dm.Office" placeholder="Office"  class="input-md form-control" ng-model="dm.Office" type="string"  validation-message="This is Required."/>
+											</div>
+						</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel-footer">
+							<div class="text-right">
+								<button type="button" id="startProcessBtn" class="btn btn-primary btn-md" ng-click="save(newcustomer);">Save</button>
+								<button type="button" id="cancelButton" class="btn btn-primary btn-md" onclick="window.close();">Close</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

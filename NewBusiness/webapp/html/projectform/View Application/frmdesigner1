@@ -1,0 +1,75 @@
+<html>
+	<head>
+		<title>View Application</title>
+	</head>
+	<body>
+		<div class='container' ng-controller='viewapplicationController'>
+			<div class='row'>
+				<div class='col-lg-12'>
+					<form name='viewapplication' id='viewapplication'>
+						<div id='main-panel' class="panel panel-primary">
+							<div class="panel-heading">
+								<h3 class="panel-title"><b>ApplicationForm</b></h3>
+							</div>
+							<div class="panel-body">
+								<div class="container-fluid">
+										<div class="row margin-top-05">
+											<div class="col-lg-6">
+												<label class="control-label">Name</label>
+											</div>
+											<div class="col-lg-6">
+												<span class="input-xlarge uneditable-input">{{dm.Name}}</span>
+											</div>
+						</div>
+										<div class="row margin-top-05">
+											<div class="col-lg-6">
+												<label class="control-label">Phone</label>
+											</div>
+											<div class="col-lg-6">
+												<label class="control-label">{{dm.Phone}}</label>
+											</div>
+						</div>
+										<div class="row margin-top-05">
+											<div class="col-lg-6">
+												<label class="control-label">Date of Birth</label>
+											</div>
+											<div class="col-lg-6">
+												<div class="inner-addon right-addon">
+													<span class="glyphicon glyphicon-calendar icon-cal" aria-hidden="true"></span>
+													<input name="dm.dateofBirth.timeinmillis" date-as-timestamp datepicker-popup="dd-MM-yyyy" placeholder="Date of Birth"  class="input-md form-control" is-open="pickdate.dateofBirth" ng-click="pickdate.dateofBirth=true" ng-model="dm.dateofBirth.timeinmillis" type='text' ng-readonly='true'  />
+												</div>
+											</div>
+						</div>
+										<div class="row margin-top-05">
+											<div class="col-lg-6">
+												<label class="control-label">Gender</label>
+											</div>
+											<div class="col-lg-6">
+												<div class="inputs">
+													<input type="radio"  name="dm.gender" ng-model="dm.gender" value="true" >&nbsp;&nbsp;True
+													<input type="radio"  name="dm.gender" ng-model="dm.gender" value="false" >&nbsp;&nbsp;False
+												</div>
+											</div>
+						</div>
+										<div class="row margin-top-05">
+											<div class="col-lg-6">
+												<label class="control-label">Marital Status</label>
+											</div>
+											<div class="col-lg-6">
+												<span class="input-xlarge uneditable-input">{{dm.maritalStatus}}</span>
+											</div>
+						</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel-footer">
+							<div class="text-right">
+								<button type="button" id="cancelButton" class="btn btn-primary btn-md" onclick="window.close();">Close</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

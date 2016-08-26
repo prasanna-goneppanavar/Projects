@@ -1,0 +1,35 @@
+<div class="fluid-container text-center">
+<div class="row">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<div class="modal-header">
+			<button type="button" class="close" ng-click="cancel()"
+				aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+			<h4 class="modal-title" id="myModalLabel"><b>Signature</b></h4>
+		</div>
+		<div class="modal-body">
+			<!-- <object id="signAppletObject" 
+			        classid="clsid:8AD9C840-044E-11D1-B3E9-00805F499D93"
+			        width="{{signComponent.signWidth}}" height="{{signComponent.signHeight}}"
+			        codebase="lib">
+			  <param name="archive" value="lib\log4j-1.2.17.jar,lib\RXTXcomm.gnu.io-1.0.jar,lib\SigPlus-1.0.jar,lib\commons-codec-1.8.jar,lib\util.biometrics-1.0.0-SNAPSHOT.jar" />
+			  <param name="code" value="util.biometrics.SignatureUI.class" />
+			  <param name="mode" value="1" /> -->
+			  <embed id="signAppletEmbed"
+			         type="application/x-java-applet;version=1.7"
+			         width="{{signComponent.signWidth}}" height="{{signComponent.signHeight}}"
+			         archive="lib/log4j-1.2.17.jar,lib/RXTXcomm.gnu.io-1.0.jar,lib/SigPlus-1.0.jar,lib/commons-codec-1.8.jar,lib/util.biometrics-1.0.0-SNAPSHOT.jar"
+			         code="util.biometrics.SignatureUI.class" 
+			         pluginspage="http://java.com/download/"
+			         mode="1" />
+			  </embed>
+			<!-- </object> -->
+		</div>
+		<div class="modal-footer">
+			<button type="button" ng-click="captureSign()" class="btn btn-default">Capture</button>
+			<button type="button" ng-click="clearSign()" class="btn btn-default">Clear</button>
+		</div>
+	</div>
+</div>
+</div>

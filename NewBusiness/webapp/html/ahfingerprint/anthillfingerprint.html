@@ -1,0 +1,11 @@
+<div class="ahCamMainDiv fluid-container text-center">
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div class=".ahFpCanvas" style="display: inline-block; position: relative;">
+				<img alt="Finger Print" ng-src="{{fpModel.fpBase64}}" class="img-thumbnail img-responsive" ng-style="{&apos;height&apos;: fpComponent.fpHeight , &apos;width&apos;: fpComponent.fpWidth}" id="capturedFp" />
+				<span ng-click="openFpCaptureModal(1)" class="glyphicon glyphicon-upload" title="Capture Finger Print" ng-hide="fpComponent.fpReadOnly || !fpComponent.enableVerification" style="position: absolute; left: 10px; top: 10px; background-color: white; border-radius: 10%; cursor: pointer;"	aria-hidden="true"></span>
+				<span ng-click="openFpCaptureModal(0)" class="glyphicon glyphicon-hand-up" title="Capture Finger Print" ng-hide="fpComponent.fpReadOnly" style="position: absolute; right: 10px; top: 10px; border-radius: 10%; background-color: white; cursor: pointer;" aria-hidden="true"></span>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,10 @@
+<div class="ahCamMainDiv fluid-container text-center">
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div class=".ahSigCanvas" style="display: inline-block; position: relative;">
+				<img alt="Signature" ng-src="{{ahmodel}}" class="img-thumbnail img-responsive" ng-style="{&apos;height&apos;: signComponent.signHeight , &apos;width&apos;: signComponent.signWidth}" id="capturedSig" />
+				<span ng-click="openSignCaptureModal()"	class="glyphicon glyphicon-pencil" ng-hide="signComponent.signReadOnly" title="Capture Signature" style="position: absolute; right: 10px; top: 10px; border-radius: 10%; background-color: white; cursor: pointer;" aria-hidden="true"></span>
+			</div>
+		</div>
+	</div>
+</div>

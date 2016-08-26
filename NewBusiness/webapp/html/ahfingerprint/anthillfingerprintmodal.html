@@ -1,0 +1,30 @@
+<div class="fluid-container text-center">
+<div class="row">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<div class="modal-header">
+			<button type="button" class="close" ng-click="cancel()"
+				aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+			<h4 class="modal-title" id="myModalLabel"><b>Finger print</b></h4>
+		</div>
+		<div class="modal-body">
+			  <embed id="fpAppletEmbed"
+			         type="application/x-java-applet;version=1.7"
+			         width="{{fpComponent.fpWidth}}" height="{{fpComponent.fpHeight}}"
+			         archive="lib/log4j-1.2.17.jar,lib/commons-codec-1.8.jar,lib/urareu.dpuareu-1.0.jar,lib/util.biometrics-1.0.0-SNAPSHOT.jar"
+			         code="util.biometrics.fingerprint.FPBiometricsApplet.class" 
+			         pluginspage="http://java.com/download/" />
+			  </embed>
+		</div>
+		<div class="modal-footer" ng-show="fpComponent.fpMode == 0">
+			<button type="button" ng-click="captureFp()" class="btn btn-default">Capture</button>
+			<button type="button" ng-click="resetFp()" class="btn btn-default">Reset</button>
+		</div>
+		<div class="modal-footer" ng-show="fpComponent.fpMode == 1">
+			<!-- <button type="button" ng-click="cancel()" class="btn btn-default">Close</button> -->
+			<button type="button" ng-click="verifyFp()" class="btn btn-default">Verify</button>
+		</div>
+	</div>
+</div>
+</div>

@@ -1,0 +1,1045 @@
+
+<section class="section container-fluid" style="padding-left: 0px;">
+ <style>
+ /*1024*/
+
+@media only screen
+and (min-width : 1010px)
+and (max-width : 1050px) {
+
+/**************/
+
+  /**form**/
+.container
+{
+ height:650px;
+ width:1000px;
+ margin:0;
+ margin-top:10px;
+}
+.row
+{
+ width:1000px;
+ padding-bottom:0;
+ margin-bottom:0;
+}
+.col-lg-12
+{
+width:990px;
+padding-bottom:0;
+ margin-bottom:0;
+}
+
+.panel-body
+{
+ width:980px;
+
+
+}
+
+.col-lg-6
+{
+ width:320px;
+ padding-bottom:0px;
+ margin-bottom:0;
+
+}
+.input-md form-control
+{
+  width:300px;
+}
+
+.panel panel-default
+{
+ width:980px;
+
+ border:2px solid black;
+
+ padding:0;
+}
+.footer
+{
+  width:668px;
+  margin-top:18px;
+  padding-top:0;
+  padding-bottom:0;
+  height:55px;
+  background-color:#F5F5DC;
+}
+.panel panel-default
+{
+ width:650px;
+ height:500px;
+}
+
+.btn1
+{
+ margin-top:10px!important;
+ margin-left:550px!important;
+ width:90px!important;
+ padding-left:10px;
+}
+.col-sm-4
+{
+ width:220px;
+}
+.labels
+{
+ width:120px;
+ float:left;
+ margin-left:30px;
+ margin-top:10px;
+}
+.inputs
+{
+ width:180px;
+ float:left;
+ margin-left:0px;
+ margin-top:10px;
+}
+.photo
+{
+  width:220px;
+  height:220px;
+  float:left;
+  margin-left:0px;
+}
+.tillimage
+{
+ float:left;
+
+ width:650px;
+}
+.clr{
+  clear:both;
+}
+.labels1
+{
+ width:120px;
+ float:left;
+ margin-left:15px;
+ margin-top:20px;
+}
+
+.labels2
+{
+ width:120px;
+ float:left;
+ margin-left:30px;
+ margin-top:20px;
+}
+
+.labels3
+{
+ width:100px;
+ float:left;
+ margin-left:27px;
+ margin-top:20px;
+}
+
+
+
+.btn1
+{
+  border:none;
+  margin-top:50px;
+  background-color:white;
+  margin-bottom:10px;
+
+}
+.sub
+{
+ margin-left:300px;
+}
+}
+
+ </style>
+  <h1 class="page-header"> </h1>
+<!--   <div class="navbar navbar-app navbar-absolute-top" >
+      <div class="topnav" ng-click="hidsidebar()"> </div>
+	  <div class="menubar" ng-click="sidebar()" ><i class="fa fa-bars"></i>   </div><div class="leftname" >mSubmission</div>
+	  <div class="mainnav"  ng-click="gohome()"><i class="fa fa-chevron-left pull-left" ></i></div><div class="topnm" ng-repeat="x in currenttop"><span style="padding-left:10px;"><img src="images/all_forms_icon.png" width="40"/></span><span style="padding-left:10px;">{{x.topname}}</span></div>
+	  <div class="middle" ng-click="hidsidebar()" ></div>
+	  <div class="srchtext" ><input class="st" type="text" ng-model="search" ng-show="showme"  /><img src="images/close_icon.png " ng-click="search = ''" ng-show="showme" class="butn">
+      </div>
+	  <div class="search1" ng-click="showinput()" ><i class="fa fa-search"></i></div> <div class="sort" ng-click="opensort()"><img src="images/sort_icon.png" width="20"/></div>
+	  <div class="sortmenu" ng-show="sortt" ng-click="clossort()"><span class="each"><img src="images/tick_icon_black.png" /><span class="sortitm">A-Z</span></span><br />
+	  <span class="each"><img src="images/tick_icon_black.png" /><span class="sortitm">Z-A</span></span><br />
+	  <span class="each"><img src="images/tick_icon_black.png" /><span class="sortitm">Last Created</span></span><br />
+	  <span class="each"><img src="images/tick_icon_black.png" /><span class="sortitm">Last Updated</span></span>
+
+	  </div>
+	   <div ng-hide="hid"><div ng-include="'sidebar.html'" ng-show="visible1"   class=" sidebar sidebar-left"  ng-class="{'slide-out':boolChangeClass}"></div></div>
+      </div>  -->
+   <div class="back" >
+   <div class="container">
+
+<tabset>
+    <tab heading="customer detail">
+
+	<div class="container" >
+
+
+            <div class="row">
+                <div class="col-lg-12">
+
+					 <!-- <form name="leaveForm" class="form-inline" role="form" ng-submit='subform()'> -->
+					 <form name="leaveForm" class="form-inline" role="form">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">
+                                    <b>Customer's detail</b>
+                                </h3>
+                            </div>
+                            <div class="panel-body">
+
+
+                                                 <div class="row">
+                                                   <div class="col-lg-6">
+                                                    <div class="col-lg-6">
+                                                        <label class="control-label">Existing Customer:</label>
+														<input type="radio"  name="dm.excust" ng-model="dm.excust" value="yes">Yes
+                                                           <input type="radio" name="dm.excust" ng-model="dm.excust"  value="no">No
+                                                    </div>
+
+
+
+
+                                                  </div>
+                                                </div>
+
+
+
+                             </div>
+
+                        </div>
+
+						<div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">
+                                    <b>Personal Information</b>
+                                </h3>
+                            </div>
+                            <div class="panel-body">
+							 <div class="row">
+                               <div class="tillimage">
+                                          <div class="row">
+                                                <div class="labels">
+                                                        <label  >Saluation:</label>
+
+                                                 </div>
+													<div class="inputs">
+                                                       <select name="dm.sal" ng-model="dm.sal" class="form-control" >
+                                                            <option selected="selected" value="">--Select--</option>
+                                                            <option value="Sal">No</option>
+                                                            <option value="Sal">Yes </option>
+
+
+                                                        </select>
+
+                                                    </div>
+													 <div class="labels">
+                                                        <label  >First Name:</label>
+
+                                                 </div>
+													<div class="inputs">
+                                                         <input name="dm.fname" ng-model="dm.fname" class="input-md form-control" type="text" />
+                                                    </div>
+
+
+
+
+								            </div>
+											 <div class="row">
+                                                <div class="labels">
+                                                        <label  >Middle name:</label>
+
+                                                 </div>
+													<div class="inputs">
+                                                         <input name="dm.mname" ng-model="dm.mname" class="input-md form-control" type="text"/>
+
+                                                    </div>
+													 <div class="labels">
+                                                        <label  >Last Name:</label>
+
+                                                 </div>
+													<div class="inputs">
+                                                         <input name="dm.lname" ng-model="dm.lname" class="input-md form-control" type="text" />
+                                                    </div>
+
+
+
+								            </div>
+											<div class="row">
+                                                <div class="labels">
+                                                        <label  >Date of birth:</label>
+
+                                                 </div>
+													<div class="inputs">
+                                                         <input name="dm.dob" ng-model="dm.dob" class="input-md form-control" type="date" />
+
+                                                    </div>
+													 <div class="labels">
+                                                        <label  >Place of Birth:</label>
+
+                                                 </div>
+													<div class="inputs">
+                                                         <input name="dm.pob" ng-model="dm.pob" class="input-md form-control" type="text" />
+                                                    </div>
+
+
+
+								            </div>
+											<div class="row">
+                                                <div class="labels">
+                                                     <label>gender:</label></div>
+														<div class="inputs">
+														<input type="radio"  name="dm.gn" ng-model="dm.gn" value="male">male
+														 <input type="radio" name="dm.gn" ng-model="dm.gn"  value="female">female
+                                                           </div>
+
+
+
+													 <div class="labels">
+                                                       <label >Marrital status:</label> </div>
+														 <div class="inputs"><input type="radio"  name="dm.mar" ng-model="dm.mar" value="mari">Married
+                                                           <input type="radio" name="dm.mar" ng-model="dm.mar"  value="single">Single
+														    <input type="radio" name="dm.mar" ng-model="dm.mar"  value="other">Others
+														 </div>
+
+
+
+
+								            </div>
+											<div class="row">
+                                                <div class="labels">
+                                                        <label  >Father Name:</label>
+
+                                                 </div>
+													<div class="inputs">
+                                                       <input name="dm.fdname" ng-model="dm.fdname" class="input-md form-control" type="text" />
+
+                                                    </div>
+													 <div class="labels">
+                                                        <label  >Mother Name:</label>
+
+                                                    </div>
+													<div class="inputs">
+                                                         <input name="dm.mdname" ng-model="dm.mdname" class="input-md form-control" type="text" />
+                                                    </div>
+
+
+
+								            </div>
+
+											</div>
+											<div class="photo"><img src="images/person.jpg"/></div>
+									</div>
+
+
+									<div class="row">
+                                                <div class="labels1">
+                                                        <label  >Language:</label>
+
+                                                    </div>
+													<div class="inputs">
+                                                         <input name="dm.lang" ng-model="dm.lang" class="input-md form-control" type="text" />
+                                                    </div>
+													<div class="labels2">
+                                                        <label  >No of Dependence:</label>
+
+                                                    </div>
+													<div class="inputs">
+                                                         <input name="dm.nod" ng-model="dm.nod" class="input-md form-control" type="number" />
+                                                    </div>
+
+													<div class="labels3">
+                                                        <label  >Unique Id:</label>
+
+                                                    </div>
+													<div class="inputs">
+                                                         <input name="dm.uid" ng-model="dm.uid" class="input-md form-control" type="text" />
+                                                    </div>
+
+
+								            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                             </div>
+                          </div>
+						  <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">
+                                    <b>Contact detail</b>
+                                </h3>
+                            </div>
+                            <div class="panel-body">
+
+									<div class="row">
+                                                <div class="labels1">
+                                                        <label  >Primary Email:</label>
+
+                                                    </div>
+													<div class="inputs">
+                                                         <input name="dm.email" ng-model="dm.email" class="input-md form-control" type="text" />
+                                                    </div>
+													<div class="labels2">
+                                                        <label  >Mobile No:</label>
+
+                                                    </div>
+													<div class="inputs">
+                                                         <input name="dm.mob" ng-model="dm.mob" class="input-md form-control" type="text" />
+                                                    </div>
+
+													<div class="labels3">
+                                                        <label  >Home Phone:</label>
+
+                                                    </div>
+													<div class="inputs">
+                                                         <input name="dm.hp" ng-model="dm.hp" class="input-md form-control" type="text" />
+                                                    </div>
+
+
+
+								            </div>
+											<div class="row">
+											 <div class="labels1">
+                                                        <label  >Work Phone:</label>
+
+                                                    </div>
+													<div class="inputs">
+                                                         <input name="dm.wp" ng-model="dm.wp" class="input-md form-control" type="text" />
+
+
+											</div>
+
+
+
+
+
+
+
+
+
+
+
+
+									</div>
+                             </div>
+                          </div>
+
+						  <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">
+                                    <b>Address</b>
+                                </h3>
+                            </div>
+                            <div class="panel-body">
+
+									 <div class="row">
+                                                   <div class="col-lg-6">
+                                                    <div class="col-lg-6">
+                                                        <label class="control-label">Preffered Address:</label>
+														<input type="checkbox" name="dm.home" value="home" ng-model="dm.home ">home  &nbsp;<input type="checkbox" name="dm.Office" value="office" ng-model="dm.office ">Office
+                                                    </div>
+
+
+
+
+                                                  </div>
+                                                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                             </div>
+                          </div>
+						   <div class="panel panel-default">
+
+
+                            <div class="panel-heading">
+
+							<a ng-click="isCollapsed = !isCollapsed">
+                                <h3 class="panel-title">
+                                    <b>Terms and Condition</b>
+                                </h3></a>
+                            </div>
+                            <div  class="panel-collapse collapse" collapse="isCollapsed">
+										<div class="panel-body">
+											<div style="height:400px; overflow-x: hidden; overflow-y:scroll;">
+												<b><center>END USER LICENSE AGREEMENT </center></b>
+												<p>PLEASE SCROLL DOWN AND READ ALL OF THE FOLLOWING TE
+												RMS AND CONDITIONS OF
+												THIS  END  USER  LICENSE  AGREEMENT  ('Agreement')  CAREF
+												ULLY  BEFORE  CLICKING  AN
+												AGREE OR SIMILAR BUTTON OR INSTALLING OR USING TH
+												E PROGRAM . THIS AGREEMENT
+												IS A LEGALLY BINDING CONTRACT BETWEEN YOU AND ORACL
+												E AMERICA, INC. THAT SETS
+												FORTH  THE  TERMS  AND  CONDITIONS  THAT  GOVERN  YOUR  USE
+												  OF  THE  PROGRAM.    BY
+												CLICKING  AN  'AGREE'  OR  SIMILAR  BUTTON    OR  BY  INSTAL
+												LING  AND/OR  USING  THE
+												PROGRAM,  YOU  AGREE  TO  ABIDE  BY  ALL  OF  THE  TERMS  AND
+												  CONDITIONS  STATED  OR
+												REFERENCED HEREIN.  IF YOU DO NOT AGREE TO ABIDE BY
+												 THESE TERMS AND CONDITIONS,
+												DO  NOT  CLICK  AN  'AGREE'  OR  SIMILAR  BUTTON  AND  DO  NO
+												T  INSTALL  OR  USE  THE
+												PROGRAM.  YOU  MUST  ACCEPT  AND  ABIDE  BY  THESE  TERMS  A
+												ND  CONDITIONS  AS
+												PRESENTED TO YOU ANY CHANGES, ADDITIONS OR DELETI
+												ONS BY YOU TO THESE TERMS
+												AND CONDITIONS WILL NOT BE ACCEPTED BY ORACLE AND W
+												ILL NOT BE PART OF THIS AGREEMENT.
+												'Oracle' refers to Oracle America, Inc., for and on
+												 behalf of itself and its subsidiaries and affiliat
+												es under
+												common control. You and Your refer to the indiv
+												idual or entity that has agreed to use the program
+												(as
+												defined  below)  in  accordance  with  this  Agreement.
+												Apple  refers  to  Apple,  Inc.  and  its  majority  owned
+												affiliates. Device means the compatible Apple iOS
+												 product You own or control.  Program refers to t
+												he
+												Oracle  CRM  On  Demand  Connected  Mobile  Sales
+												   software   application   and   any   program
+												documentation  provided  by  Oracle  and  licensed  to  Yo
+												u  subject  to  the  terms  and  conditions  of  this
+												Agreement.  Server  Product  refers  to  the  separatel
+												y  licensed
+												Oracle CRM On Demand or Oracle
+												Mobile Sales Data Access
+												 products which You are an authorized user of pursu
+												ant to the terms of the
+												Server  Product  Agreement.  Server  Product  Agreement
+												refers  to  the  Oracle  license  agreement  for  the
+												Server Product.
+												This Agreement is governed by and construed in acco
+												rdance with the substantive and procedural laws of
+												the  United  States  and  the  State  of  California,  exce
+												pt  that  body  of  California  law  concerning  conflicts
+												  of
+												law.  You  and  Oracle  agree  to  submit  to  the  exclusiv
+												e  jurisdiction  of,  and  venue  in,  the  courts  of  San
+												Francisco or Santa Clara counties in California in
+												any dispute arising out of or relating to this Agre
+												ement.
+												The  United  Nations  Convention  on  Contracts  for  the
+												International  Sale  of  Goods  and  the  Uniform
+												Computer Information Transactions Act do not apply
+												to this Agreement.  </p>
+												<b>INTRODUCTION </b><p>
+												Once installed and properly configured on Your Devi
+												ce, the Program will enable You to use Your Device
+												to access Server Product as permitted by the Server
+												 Product Agreement.  Your use of the Program and
+												Server  Product  is  subject  to  the  terms  referenced  h
+												erein,  including  the  terms  of  the  Server  Product
+												Agreement. </p>
+												<b>LICENSE </b>
+												<p>Subject to the terms set forth in this Agreement an
+												d the App Store Terms of Service, Oracle grants You
+												 a
+												nonexclusive,  nontransferable,  nonsublicensable,  re
+												vocable,  limited  right  to  install  and  run  the  Progr
+												am
+												on Your Device solely in connection with Your autho
+												rized use of Server Product.
+												Your use of Server Product is governed by the terms
+												 of the Server Product Agreement.  Your right to us
+												e
+												the  Program  will  cease  upon  the  earlier  of  (i)  the
+												expiration,  termination  or  suspension  of  the  Server
+												Product Agreement, or (ii) the expiration, terminat
+												ion or suspension of Your status as an authorized u
+												ser
+												of Server Product.  Oracle may audit Your use of th
+												e Program. You are not permitted to use the Program
+												for  any  purpose  other  than  in  connection  with  Your
+												authorized  use  of  Server  Product.    You  agree  to
+												comply with any applicable third party terms of agr
+												eement when using the Program.</p>
+											</div>
+											<div class="panel-footer text-right form-inline">
+												<label class="checkbox-inline">
+													<input type="checkbox" name="person.terms.agree" ng-model="person.terms.agree" value="agree"> <b>I Agree</b>
+												</label>
+												<button type="button" class="btn btn-md btn-sm btn-primary" ng-click="">continue</button>
+											</div>
+										</div>
+										</div>
+                          </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+	</tab>
+    <tab heading="Account Details">
+
+	  <div class="container" >
+
+
+            <div class="row">
+                <div class="col-lg-12">
+
+					 <!-- <form name="leaveForm" class="form-inline" role="form" ng-submit='subform1()'> -->
+					 <form name="leaveForm" class="form-inline" role="form" >
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">
+                                    <b>Customer's detail</b>
+                                </h3>
+                            </div>
+                            <div class="panel-body">
+
+
+                                                 <div class="row">
+                                                   <div class="col-lg-6">
+                                                    <div class="col-lg-6">
+                                                        <label class="control-label">Existing Customer:</label>
+														<input type="radio"  name="dm.excust" ng-model="dm.excust" value="yes">Yes
+                                                           <input type="radio" name="dm.excust" ng-model="dm.excust"  value="no">No
+                                                    </div>
+
+
+
+
+                                                  </div>
+                                                </div>
+
+
+
+                             </div>
+
+                        </div>
+
+						<div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">
+                                    <b>Personal Information</b>
+                                </h3>
+                            </div>
+                            <div class="panel-body">
+							 <div class="row">
+                               <div class="tillimage">
+                                          <div class="row">
+                                                <div class="labels">
+                                                        <label  >Saluation:</label>
+
+                                                 </div>
+													<div class="inputs">
+                                                       <select name="dm.sal" ng-model="dm.sal" class="form-control" >
+                                                            <option selected="selected" value="">--Select--</option>
+                                                            <option value="Sal">No</option>
+                                                            <option value="Sal">Yes </option>
+
+
+                                                        </select>
+
+                                                    </div>
+													 <div class="labels">
+                                                        <label  >First Name:</label>
+
+                                                 </div>
+													<div class="inputs">
+                                                         <input name="dm.fname" ng-model="dm.fname" class="input-md form-control" type="text" />
+                                                    </div>
+
+
+
+
+								            </div>
+											 <div class="row">
+                                                <div class="labels">
+                                                        <label  >Middle name:</label>
+
+                                                 </div>
+													<div class="inputs">
+                                                         <input name="dm.mname" ng-model="dm.mname" class="input-md form-control" type="text"/>
+
+                                                    </div>
+													 <div class="labels">
+                                                        <label  >Last Name:</label>
+
+                                                 </div>
+													<div class="inputs">
+                                                         <input name="dm.lname" ng-model="dm.lname" class="input-md form-control" type="text" />
+                                                    </div>
+
+
+
+								            </div>
+											<div class="row">
+                                                <div class="labels">
+                                                        <label  >Date of birth:</label>
+
+                                                 </div>
+													<div class="inputs">
+                                                         <input name="dm.dob" ng-model="dm.dob" class="input-md form-control" type="date" />
+
+                                                    </div>
+													 <div class="labels">
+                                                        <label  >Place of Birth:</label>
+
+                                                 </div>
+													<div class="inputs">
+                                                         <input name="dm.pob" ng-model="dm.pob" class="input-md form-control" type="text" />
+                                                    </div>
+
+
+
+								            </div>
+											<div class="row">
+                                                <div class="labels">
+                                                     <label>gender:</label></div>
+														<div class="inputs">
+														<input type="radio"  name="dm.gn" ng-model="dm.gn" value="male">male
+														 <input type="radio" name="dm.gn" ng-model="dm.gn"  value="female">female
+                                                           </div>
+
+
+
+													 <div class="labels">
+                                                       <label >Marrital status:</label> </div>
+														 <div class="inputs"><input type="radio"  name="dm.mar" ng-model="dm.mar" value="mari">Married
+                                                           <input type="radio" name="dm.mar" ng-model="dm.mar"  value="single">Single
+														    <input type="radio" name="dm.mar" ng-model="dm.mar"  value="other">Others
+														 </div>
+
+
+
+
+								            </div>
+											<div class="row">
+                                                <div class="labels">
+                                                        <label  >Father Name:</label>
+
+                                                 </div>
+													<div class="inputs">
+                                                       <input name="dm.fdname" ng-model="dm.fdname" class="input-md form-control" type="text" />
+
+                                                    </div>
+													 <div class="labels">
+                                                        <label  >Mother Name:</label>
+
+                                                    </div>
+													<div class="inputs">
+                                                         <input name="dm.mdname" ng-model="dm.mdname" class="input-md form-control" type="text" />
+                                                    </div>
+
+
+
+								            </div>
+
+											</div>
+											<div class="photo"><img src="images/ppl.png"/></div>
+									</div>
+
+
+									<div class="row">
+                                                <div class="labels1">
+                                                        <label  >Language:</label>
+
+                                                    </div>
+													<div class="inputs">
+                                                         <input name="dm.lang" ng-model="dm.lang" class="input-md form-control" type="text" />
+                                                    </div>
+													<div class="labels2">
+                                                        <label  >No of Dependence:</label>
+
+                                                    </div>
+													<div class="inputs">
+                                                         <input name="dm.nod" ng-model="dm.nod" class="input-md form-control" type="text" />
+                                                    </div>
+
+													<div class="labels3">
+                                                        <label  >Unique Id:</label>
+
+                                                    </div>
+													<div class="inputs">
+                                                         <input name="dm.uid" ng-model="dm.uid" class="input-md form-control" type="text" />
+                                                    </div>
+
+
+								            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                             </div>
+                          </div>
+
+
+
+
+
+						 <div class="sub">
+
+								<button class="btn1" ><img src="images/plus.png" /></button>
+                               </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </tab>
+    <tab heading="Nominee detail">
+
+	<div class="container" >
+
+
+            <div class="row">
+                <div class="col-lg-12">
+
+					 <!-- <form name="leaveForm" class="form-inline" role="form" ng-submit='subform2()'> -->
+					 <form name="leaveForm" class="form-inline" role="form">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">
+                                    <b>Customer's detail</b>
+                                </h3>
+                            </div>
+                            <div class="panel-body">
+
+
+                                                 <div class="row">
+                                                   <div class="col-lg-6">
+                                                    <div class="col-lg-6">
+                                                        <label class="control-label">Existing Customer:</label>
+														<input type="radio"  name="dm.excust" ng-model="dm.excust" value="yes">Yes
+                                                           <input type="radio" name="dm.excust" ng-model="dm.excust"  value="no">No
+                                                    </div>
+
+
+
+
+                                                  </div>
+                                                </div>
+
+
+
+                             </div>
+
+                        </div>
+
+
+						  <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">
+                                    <b>Contact detail</b>
+                                </h3>
+                            </div>
+                            <div class="panel-body">
+
+									<div class="row">
+                                                <div class="labels1">
+                                                        <label  >Primary Email:</label>
+
+                                                    </div>
+													<div class="inputs">
+                                                         <input name="dm.em" ng-model="dm.em" class="input-md form-control" type="text" />
+                                                    </div>
+													<div class="labels2">
+                                                        <label  >Mobile No:</label>
+
+                                                    </div>
+													<div class="inputs">
+                                                         <input name="dm.mob" ng-model="dm.mob" class="input-md form-control" type="text" />
+                                                    </div>
+
+													<div class="labels3">
+                                                        <label  >Home Phone:</label>
+
+                                                    </div>
+													<div class="inputs">
+                                                         <input name="dm.hp" ng-model="dm.hp" class="input-md form-control" type="text" />
+                                                    </div>
+
+
+
+								            </div>
+											<div class="row">
+											 <div class="labels1">
+                                                        <label  >Work Phone:</label>
+
+                                                    </div>
+													<div class="inputs">
+                                                         <input name="dm.wp" ng-model="dm.wp" class="input-md form-control" type="text" />
+
+
+											</div>
+
+
+
+
+
+
+
+
+
+
+
+
+									</div>
+                             </div>
+                          </div>
+
+
+
+
+
+
+						     <div class="sub">
+                                <button  class="btn1" ><img src="images/plus.png" /></button>
+                               </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </tab>
+	 <tab heading="Service Required">
+	 <div class="container" >
+
+
+            <div class="row">
+                <div class="col-lg-12">
+
+					 <!-- <form name="leaveForm" class="form-inline" role="form" ng-submit='subform3()'> -->
+					<form name="leaveForm" class="form-inline" role="form">
+
+
+						  <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">
+                                    <b>Contact detail</b>
+                                </h3>
+                            </div>
+                            <div class="panel-body">
+
+									<div class="row">
+                                                <div class="labels1">
+                                                        <label  >Primary Email:</label>
+
+                                                    </div>
+													<div class="inputs">
+                                                         <input name="dm.em" ng-model="dm.em" class="input-md form-control" type="text" />
+                                                    </div>
+													<div class="labels2">
+                                                        <label  >Mobile No:</label>
+
+                                                    </div>
+													<div class="inputs">
+                                                         <input name="dm.mob" ng-model="dm.mob" class="input-md form-control" type="text" />
+                                                    </div>
+
+													<div class="labels3">
+                                                        <label  >Home Phone:</label>
+
+                                                    </div>
+													<div class="inputs">
+                                                         <input name="dm.hp" ng-model="dm.hp" class="input-md form-control" type="text" />
+                                                    </div>
+
+
+
+								            </div>
+											<div class="row">
+											 <div class="labels1">
+                                                        <label  >Work Phone:</label>
+
+                                                    </div>
+													<div class="inputs">
+                                                         <input name="dm.wp" ng-model="dm.wp" class="input-md form-control" type="text" />
+
+
+											</div>
+
+
+
+
+
+
+
+
+
+
+
+
+									</div>
+                             </div>
+                          </div>
+
+
+
+
+
+
+						     <div class="sub">
+                                <button  class="btn1" ><img src="images/plus.png" /></button>
+                               </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+	  </tab>
+
+  </tabset>
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+ </div>
+
+
+
+</section>
